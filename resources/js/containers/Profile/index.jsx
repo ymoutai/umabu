@@ -1,5 +1,4 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 import styled from 'styled-components';
 import Logo from '../../assets/animal_stand_uma.png'
 
@@ -33,7 +32,7 @@ const IntroductionContent = () => {
 
 const Profile = () => {
   return (
-    <div class="main">
+    <div className="main">
       <TitleContent />
       <MyImgContent />
       <MyNameContent />
