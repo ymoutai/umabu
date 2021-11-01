@@ -11,18 +11,19 @@ class BlogsTableSeeder extends Seeder
      */
     public function run()
     {
+        \Illuminate\Support\Facades\DB::table('blogs')->truncate();
         \DB::table('blogs')->insert([
             [
-                'title' => 'title1',
-                'text' => 'text1'
+                'title' => 'Reactはじめました。',
+                'text' => 'Reactはじめた馬氏！<br>どうなるのか！？'
             ],
             [
-                'title' => 'title2',
-                'text' => 'text2'
+                'title' => 'フックってなにゃ！！！',
+                'text' => 'よくわからんにゃ！！！！！'
             ],
             [
-                'title' => 'title3',
-                'text' => 'text3'
+                'title' => 'ぽりんき〜〜〜！！！！',
+                'text' => 'ぽりんきてゃ🎀'
             ],
         ]);
     }

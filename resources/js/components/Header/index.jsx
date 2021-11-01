@@ -2,9 +2,13 @@ import React from 'react';
 import { BrowserRouter, Route, Router, Switch, Link } from 'react-router-dom';
 import styled from 'styled-components';
 
+const MyName = styled.h1`
+  color: #777777;
+`;
+
 const MyNameItem = () => {
   return (
-    <h1>Moutai</h1>
+    <MyName>Moutai</MyName>
   );
 }
 
@@ -67,7 +71,7 @@ const MyNameArea = styled.div `
     margin: 0;
     padding: 0;
     color: #fff;
-    font-size: 2.5em;
+    font-size: 3em;
   };
   background: #3BA8E5;
   height: 150px;
@@ -79,7 +83,7 @@ const MyNameArea = styled.div `
 function MyNameContainer() {
   return (
     <MyNameArea>
-      <h2>UMA BLOG</h2>
+      <h2>Umabu!</h2>
     </MyNameArea>
   );
 }

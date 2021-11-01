@@ -2763,7 +2763,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, ".App {\n  text-align: center;\n}\n\n.App-logo {\n  height: 40vmin;\n  pointer-events: none;\n}\n\n@media (prefers-reduced-motion: no-preference) {\n  .App-logo {\n    -webkit-animation: App-logo-spin infinite 20s linear;\n            animation: App-logo-spin infinite 20s linear;\n  }\n}\n\n.App-header {\n  background-color: #282c34;\n  min-height: 100vh;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  font-size: calc(10px + 2vmin);\n  color: white;\n}\n\n.App-link {\n  color: #61dafb;\n}\n\n@-webkit-keyframes App-logo-spin {\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n}\n\n@keyframes App-logo-spin {\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n}\n", ""]);
+exports.push([module.i, "", ""]);
 
 // exports
 
@@ -37029,19 +37029,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-var _templateObject, _templateObject2, _templateObject3;
+var _templateObject, _templateObject2, _templateObject3, _templateObject4;
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 
 
 
+var MyName = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].h1(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  color: #777777;\n"])));
 
 var MyNameItem = function MyNameItem() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Moutai");
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MyName, null, "Moutai");
 };
 
-var TitleButton = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].nav(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  margin-left: auto;\n  ul {\n    display: flex;\n    list-style: none;\n  };\n\n  ul li {\n    margin-left: 20px;\n  };\n\n  ul li span {\n    color: #777777;\n  };\n\n  ul li a {\n    text-decoration: none;\n  };\n"])));
+var TitleButton = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].nav(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  margin-left: auto;\n  ul {\n    display: flex;\n    list-style: none;\n  };\n\n  ul li {\n    margin-left: 20px;\n  };\n\n  ul li span {\n    color: #777777;\n  };\n\n  ul li a {\n    text-decoration: none;\n  };\n"])));
 
 var TitleButtons = function TitleButtons() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TitleButton, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
@@ -37053,16 +37054,16 @@ var TitleButtons = function TitleButtons() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Tocca")))));
 };
 
-var TitleArea = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  display: flex;\n  height:50px;\n  align-items: center;\n  padding: 0 20px;\n"])));
+var TitleArea = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n  display: flex;\n  height:50px;\n  align-items: center;\n  padding: 0 20px;\n"])));
 
 function Title() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TitleArea, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MyNameItem, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TitleButtons, null));
 }
 
-var MyNameArea = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n  h2 {\n    margin: 0;\n    padding: 0;\n    color: #fff;\n    font-size: 2.5em;\n  };\n  background: #3BA8E5;\n  height: 150px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n"])));
+var MyNameArea = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n  h2 {\n    margin: 0;\n    padding: 0;\n    color: #fff;\n    font-size: 3em;\n  };\n  background: #3BA8E5;\n  height: 150px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n"])));
 
 function MyNameContainer() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MyNameArea, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "UMA BLOG"));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MyNameArea, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Umabu!"));
 }
 
 var Header = function Header() {
@@ -37091,6 +37092,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+var _templateObject;
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
 
 
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
@@ -37113,6 +37119,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 
 
+
 function GetDataJson(_x) {
   return _GetDataJson.apply(this, arguments);
 }
@@ -37124,26 +37131,24 @@ function _GetDataJson() {
       while (1) {
         switch (_context2.prev = _context2.next) {
           case 0:
-            console.log(123);
-            _context2.prev = 1;
-            _context2.next = 4;
+            _context2.prev = 0;
+            _context2.next = 3;
             return axios__WEBPACK_IMPORTED_MODULE_2___default.a.get('/api/blog_get/' + param);
 
-          case 4:
+          case 3:
             result = _context2.sent;
-            console.log(result);
             return _context2.abrupt("return", result.data);
 
-          case 9:
-            _context2.prev = 9;
-            _context2.t0 = _context2["catch"](1);
+          case 7:
+            _context2.prev = 7;
+            _context2.t0 = _context2["catch"](0);
 
-          case 11:
+          case 9:
           case "end":
             return _context2.stop();
         }
       }
-    }, _callee2, null, [[1, 9]]);
+    }, _callee2, null, [[0, 7]]);
   }));
   return _GetDataJson.apply(this, arguments);
 }
@@ -37169,10 +37174,9 @@ var Blog = function Blog() {
 
               case 2:
                 data = _context.sent;
-                console.log(456);
                 setBlog(data);
 
-              case 5:
+              case 4:
               case "end":
                 return _context.stop();
             }
@@ -37187,10 +37191,15 @@ var Blog = function Blog() {
 
     f();
   }, []);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", null, blog.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, blog.text));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(BlogStyle, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", null, blog.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
+    dangerouslySetInnerHTML: {
+      __html: blog.text
+    }
+  }));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Blog);
+var BlogStyle = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  h1 {\n    text-align: center;\n    padding-top: 2rem\n  }\n  h2 {\n    padding-top: 2rem;\n  }\n"])));
 
 /***/ }),
 
@@ -37284,6 +37293,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+var _templateObject;
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -37301,6 +37315,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
 
 
 
@@ -37374,14 +37389,16 @@ var Top = function Top() {
 
     f();
   }, []);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("ul", null, blog_items.map(function (data, index) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(TopStyle, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("ul", null, blog_items.map(function (data, index) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"], {
-      to: "/blog/" + data.id
-    }, data.title)));
+      to: "/blog/" + data.id,
+      className: "title"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, data.title))));
   })));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Top);
+var TopStyle = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  text-align:center;\n  ul {\n    margin: 0;\n    padding: 0;\n  }\n  ul li {\n    list-style: none;\n    font-size: 2rem;\n    padding-top: 2rem;\n  }\n\n  .title span {\n    color: black;\n  }\n"])));
 
 /***/ }),
 
