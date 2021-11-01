@@ -2,8 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import Logo from '../../assets/animal_stand_uma.png'
 
+const Title = styled.h1`
+  padding-top: 1em;
+`;
+
 const TitleContent = () => {
-  return <h1>Profile</h1>;
+  return <Title>Profile</Title>;
 }
 
 const MyImgStyle = styled.p `
@@ -30,14 +34,18 @@ const IntroductionContent = () => {
   );
 }
 
+const Main = styled.div`
+  text-align:center;
+`;
+
 const Profile = () => {
   return (
-    <div className="main">
+    <Main>
       <TitleContent />
       <MyImgContent />
       <MyNameContent />
       <IntroductionContent />
-    </div>
+    </Main>
   );
 }
 

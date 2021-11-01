@@ -11,6 +11,7 @@ import Top from './containers/Top';
 import Profile from './containers/Profile';
 import Blog from './containers/Blog';
 import NotFound from './containers/NotFound';
+import Registration from './containers/Registration';
 
 function Root() {
   return (
@@ -23,12 +24,16 @@ function Root() {
             <Top />
           </Route>
 
-          <Route path="/profile">
+          <Route exact path="/profile">
             <Profile />
           </Route>
 
-          <Route path="/blog/:id">
+          <Route exact path="/blog/:id">
             <Blog />
+          </Route>
+
+          <Route exact path="/regstration">
+            <Registration />
           </Route>
 
           <Route>
