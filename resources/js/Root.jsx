@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 // containers
 import Top from './containers/Top';
 import Profile from './containers/Profile';
+import Blog from './containers/Blog';
 import NotFound from './containers/NotFound';
 
 function Root() {
@@ -24,6 +25,10 @@ function Root() {
 
           <Route path="/profile">
             <Profile />
+          </Route>
+
+          <Route path="/blog/:id">
+            <Blog />
           </Route>
 
           <Route>

@@ -18,4 +18,7 @@ Route::middleware('auth:api')->get('/usre', function (Request $request) {
     return $request->user();
 });
 
+// 全件取得
 Route::get('/blog_get', 'api\BlogGetController@index');
+// 1件取得
+Route::get('/blog_get/{id}', 'api\BlogGetController@getIdBlog');

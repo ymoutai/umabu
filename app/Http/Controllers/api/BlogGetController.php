@@ -14,4 +14,9 @@ class BlogGetController extends Controller
         $blogs = DatBlog::all();
         return response()->json($blogs, 200);
     }
+
+    public function getIdBlog($id) {
+        $blog = DatBlog::where('id', $id)->first();
+        return response()->json($blog, 200);
+    }
 }
