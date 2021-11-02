@@ -22,3 +22,6 @@ Route::middleware('auth:api')->get('/usre', function (Request $request) {
 Route::get('/blog_get', 'api\BlogGetController@index');
 // 1件取得
 Route::get('/blog_get/{id}', 'api\BlogGetController@getIdBlog');
+
+// 登録
+Route::post('/post', 'api\RegisterController@store');
