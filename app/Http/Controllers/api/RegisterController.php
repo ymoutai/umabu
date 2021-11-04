@@ -14,12 +14,18 @@ class RegisterController extends Controller
         
         // validation
 
+        // ファイル保存
+        // return response()->json($req, 200);
+        // $filename = $req['image']->name;
+        $image_path = $req['image']->store('public');
+
         // 登録
         DB::beginTransaction();
         try {
             DatBlog::create([
                 'title' => $req['title'],
-                'text'  => $req['text']
+                'text'  => $req['text'],
+                'image' => basename($image_path),
             ]);
             DB::commit();
         }catch(Exception $e) {

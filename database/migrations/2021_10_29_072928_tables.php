@@ -17,6 +17,7 @@ class Tables extends Migration
             $table->id();
             $table->text('title')->comment('タイトル');
             $table->longText('text')->comment('本文');
+            $table->text('image')->comment('タイトル画像URL');
             $table->timestamps();
         });
     }

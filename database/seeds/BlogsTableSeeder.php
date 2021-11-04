@@ -15,15 +15,18 @@ class BlogsTableSeeder extends Seeder
         \DB::table('blogs')->insert([
             [
                 'title' => 'Reactはじめました。',
-                'text' => 'Reactはじめた馬氏！<br>どうなるのか！？'
+                'text' => 'Reactはじめた馬氏！<br>どうなるのか！？',
+                'image' => 'test',
             ],
             [
                 'title' => 'フックってなにゃ！！！',
-                'text' => 'よくわからんにゃ！！！！！'
+                'text' => 'よくわからんにゃ！！！！！',
+                'image' => 'test',
             ],
             [
                 'title' => 'ぽりんき〜〜〜！！！！',
-                'text' => 'ぽりんきてゃ🎀'
+                'text' => 'ぽりんきてゃ🎀',
+                'image' => 'test',
             ],
         ]);
     }

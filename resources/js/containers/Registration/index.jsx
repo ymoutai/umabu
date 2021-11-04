@@ -17,6 +17,7 @@ const Register = styled.div(props => `
 const Registration = () => {
   const [title, setTitle] = useState('');
   const [text, setText] = useState('');
+  const [image, setImage] = useState(null);
   const [complete, setComplete] = useState('none');
 
   function handleChangeTitle(event) {
@@ -27,19 +28,28 @@ const Registration = () => {
     setText(event.target.value);
   }
 
+  function handleChangeImage(event) {
+    setImage(event.target.files[0]);
+  }
+
   async function post() {
-    const data = {
-      title: title,
-      text: text
-    }
+    const params = new FormData();
+    params.append('title', title);
+    params.append('text', text);
+    params.append('image', image);
 
     try {
-      const result = await axios.post('/api/post', data);
+      const result = await axios.post('/api/post', params, {
+        headers: {'content-type': 'multipart/form-data',}
+      });
       if (result.status == 200) {
+        console.log(result);
         setComplete('block');
+      } else {
+        console.log(result);
       }
     } catch(error) {
-
+      console.log(error);
     }
   }
 
@@ -50,6 +60,10 @@ const Registration = () => {
         <label>
           <p>Title</p>
           <input type="text" value={ title } onChange={ handleChangeTitle }/>
+        </label>
+        <label>
+          <p>Title Image</p>
+          <input type="file" onChange={ handleChangeImage }/>
         </label>
         <label>
           <p>Text</p>
