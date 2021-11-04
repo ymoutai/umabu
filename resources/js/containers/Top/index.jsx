@@ -66,8 +66,6 @@ const Top = () => {
 
   const classes = useStyles();
 
-  const url = window.location.protocol + '//' + window.location.host;
-
   return (
     <Container className={classes.cardGrid} maxWidth="md">
       <Grid container spacing={4}>
@@ -93,20 +91,3 @@ const Top = () => {
 }
 
 export default Top;
-
-// const TopStyle = styled.div`
-//   text-align:center;
-//   ul {
-//     margin: 0;
-//     padding: 0;
-//   }
-//   ul li {
-//     list-style: none;
-//     font-size: 2rem;
-//     padding-top: 2rem;
-//   }
-
-//   .title span {
-//     color: black;
-//   }
-// `;
